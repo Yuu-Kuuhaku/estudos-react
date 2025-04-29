@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import type { Route } from "./+types/home";
 import LoginForm from "~/componentes/loginForm/loginForm";
+import LoginForm2 from "~/componentes/loginForm/loginForm2";
 
 
 
@@ -18,7 +19,7 @@ export default function Login() {
     <div className="max-w-[300px] w-full space-y-6 px-4">
       <LoginForm />
 
-      <LoginForm appearance="label-placeholder"/>
+      <LoginForm2 appearance="label-placeholder"/>
 
     </div>
   </div>
