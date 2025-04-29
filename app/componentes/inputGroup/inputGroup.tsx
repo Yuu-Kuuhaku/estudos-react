@@ -20,7 +20,7 @@ interface InputGroupProps extends React.HTMLAttributes<HTMLDivElement> {
   appearance?: 'normal' | 'label-placeholder' | undefined
 }
 
-export default function InputGroup({ appearance = "normal", InputProps, ...props}: InputGroupProps, )  {
+export default function InputGroup({ appearance = "normal", InputProps, labelProps, ...props}: InputGroupProps, )  {
 
   const [animar, setAnimar] = useState(false);
   const [withValue, setWithValue] = useState(false);
@@ -46,7 +46,7 @@ export default function InputGroup({ appearance = "normal", InputProps, ...props
   return (
     <div {...props} className={classes}>
       <Input {...InputProps} appearance={appearance} />
-      <Label htmlFor={ InputProps.id } {...props.labelProps} appearance={appearance}  ></Label>
+      <Label htmlFor={ InputProps.id } {...labelProps} appearance={appearance}  ></Label>
       { props.children}
     </div>
   )

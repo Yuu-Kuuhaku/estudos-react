@@ -82,7 +82,7 @@ export default function LoginForm2({appearance= 'normal'}:LoginFormProps) {
           <InputGroup
             appearance={appearance}
             labelProps={{
-              text: "E-mail:",
+              text: "E-mail",
             }}
             InputProps={{
               id: "email"+ appearance,
@@ -98,7 +98,7 @@ export default function LoginForm2({appearance= 'normal'}:LoginFormProps) {
           <InputGroup
             appearance={appearance}
             labelProps={{
-              text: "Senha:",
+              text: "Senha",
             }}
             InputProps={{
               id: "password"+ appearance,
